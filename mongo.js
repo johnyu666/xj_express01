@@ -1,3 +1,3 @@
 const  mongoose=require('mongoose')
-
-let BookSchema={name:{type:String},price:{type:Number}}
+const model=require('./models')
+let Book=mongoose.model("book",model.BookSchema)
